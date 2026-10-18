@@ -1,2 +1,2 @@
-# tencentcloud-k8s-helm
-tencentcloud-k8s Helm repository, mainly for CICD
+# tencentcloud-k8s-gitops
+tencentcloud-k8s GitOps repository, mainly for ArgoCD
