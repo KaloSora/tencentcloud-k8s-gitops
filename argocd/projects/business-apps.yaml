@@ -1,0 +1,31 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: business-apps
+  namespace: argocd
+spec:
+  description: Business applications across four environments
+
+  sourceRepos:
+    - https://github.com/KaloSora/tencentcloud-k8s-app.git
+    - https://github.com/KaloSora/tencentcloud-k8s-gitops.git
+
+  destinations:
+    - server: https://kubernetes.default.svc
+      namespace: dev
+    - server: https://kubernetes.default.svc
+      namespace: uat
+    - server: https://kubernetes.default.svc
+      namespace: preprod
+    - server: https://kubernetes.default.svc
+      namespace: prod
+
+  # Namespace and other cluster-scoped resources remain managed by Terraform.
+  clusterResourceWhitelist: []
+
+  # The current sample Chart only creates Deployments and Services.
+  namespaceResourceWhitelist:
+    - group: apps
+      kind: Deployment
+    - group: ""
+      kind: Service
