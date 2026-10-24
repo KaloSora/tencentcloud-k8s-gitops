@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: k8s-demo-app-uat
+  namespace: argocd
+spec:
+  project: business-apps
+  source:
+    repoURL: https://github.com/KaloSora/tencentcloud-k8s-gitops.git
+    targetRevision: main
+    path: apps/k8s-demo-app/environments/uat/manifests
+    directory:
+      recurse: false
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: uat
