@@ -6,9 +6,6 @@
     "namespace": "prod"
   },
   "spec": {
-    "selector": {
-      "app.kubernetes.io/name": "k8s-demo-app"
-    },
     "ports": [
       {
         "name": "http",
@@ -16,6 +13,9 @@
         "targetPort": "http"
       }
     ],
+    "selector": {
+      "app.kubernetes.io/name": "k8s-demo-app"
+    },
     "type": "ClusterIP"
   }
 }
