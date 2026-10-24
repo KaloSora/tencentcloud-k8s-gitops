@@ -31,7 +31,7 @@
                 "value": "18080"
               }
             ],
-            "image": "harbor.core.com/library/com.tencentcloud.k8s.app/k8s-demo-app@sha256:12000f8747213e7a6dce792fdf03ea82fdce8a9814a703d3d06a777353312d3c",
+            "image": "harbor.core.com/library/com.tencentcloud.k8s.app/k8s-demo-app@sha256:ce4957180811fbac07d23a80ffd7ddee17e2be6a6848483197ae4ea4d273fa27",
             "imagePullPolicy": "IfNotPresent",
             "livenessProbe": {
               "httpGet": {
