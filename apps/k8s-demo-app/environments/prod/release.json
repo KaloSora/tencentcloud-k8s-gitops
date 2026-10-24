@@ -1,0 +1,7 @@
+{
+  "imageDigest": "sha256:12000f8747213e7a6dce792fdf03ea82fdce8a9814a703d3d06a777353312d3c",
+  "imageRepository": "harbor.core.com/library/com.tencentcloud.k8s.app/k8s-demo-app",
+  "jira": "JIRA-1",
+  "sourceCommit": "6743e06472470e18111a31ebac7db1eeb3788ce0",
+  "version": "1.0.1-SNAPSHOT"
+}
