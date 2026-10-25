@@ -1,9 +1,9 @@
 {
   "artifactId": "k8s-demo-app",
-  "configDigest": "sha256:0930662fac04e442e23728c13f453edd4e49c45e8ee3221c3433f7575e5ae586",
-  "imageDigest": "sha256:ce4957180811fbac07d23a80ffd7ddee17e2be6a6848483197ae4ea4d273fa27",
+  "configDigest": "sha256:3922ff689702e8e11a15cbc17c7cf9b9db5bc2e22f658036a2d62dbd7fa6d5fe",
+  "imageDigest": "sha256:64a1997e685ff8cfe9fec18cd35a3acfe761d78ff9aee4982eaff41fd44f6486",
   "imageRepository": "harbor.core.com/library/com.tencentcloud.k8s.app/k8s-demo-app",
   "jira": "JIRA-1",
-  "sourceCommit": "67b0bdf724b1dbd0fddea4d475c09fd072683604",
-  "version": "1.0.2-SNAPSHOT"
+  "sourceCommit": "fc89921a42a3a759f272aac93b51d56d13980cae",
+  "version": "1.0.3-SNAPSHOT"
 }
